@@ -1,0 +1,77 @@
+html {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.gif {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.gif img {
+  margin: auto;
+}
+
+.share-button {
+  display: block;
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gif-masonry {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.gif-col {
+  background-clip: padding-box;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.gif-appear {
+  opacity: 0.01;
+  color:white;
+}
+
+.gif-appear.gif-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  color:pink;
+}
+
+.copy-appear {
+  opacity: 1;
+  color:white;
+}
+
+.copy-appear.copy-appear-active {
+  opacity: 0.01;
+  transition: opacity 5000ms ease-out;
+  color:pink;
+}
