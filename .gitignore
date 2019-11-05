@@ -1,4 +1,4 @@
-gifusion_back/key.py
 gifusion_back/venv
 gifusion_back/__pycache__
 gifusion_back/*.pyc
+gifusion_back/var.sh

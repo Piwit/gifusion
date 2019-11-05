@@ -1,12 +1,6 @@
 import { objToQueryString, getUserLangISO6391 } from '../util.js';
 
-let url = 'http://localhost:5000';
-if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-  url = 'http://localhost:5000';
-} else {
-  url = 'http://localhost:5000';
-}
-const URL = url;
+const URL = process.env.REACT_APP_URL;
 
 export const search = (term, page) => {
   const params = objToQueryString({
