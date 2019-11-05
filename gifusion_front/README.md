@@ -1,19 +1,27 @@
-# GIFusion front
+# GIFusion Front End
 
-You need to add a key.js file, in src/
+## Setup
 
-key.js must contain a valid facebook API key, to allow sharing on social media
+You need to set the following environments variables to run the app
 
-To install dependencies
+* REACT_APP_FB_API_KEY : your facebook app ID, allow to share a gif on a social media
+* REACT_APP_URL : your gifusion API url
+
+
+Install dependencies
 
 `npm install`
 
-To start a development server
+Start a development server
 
 `npm start`
 
-To create a production build
+Create a production build
 
 `npm run build`
 
 Bootstraped with Create-React-App
+
+## Deploy
+
+To deploy you just have to push on master, netlify will build the app
