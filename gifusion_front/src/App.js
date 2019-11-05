@@ -11,6 +11,7 @@ import Result from './components/Result/Result';
 import Loading from './components/Loading/Loading';
 import { search } from './actions/search.js';
 import notFoundAnyGif from './notFoundAnyGif.png';
+import giphy from './giphy.png';
 import { chooseHappyWord } from './word.js';
 
 import { FB_API_KEY } from './key.js';
@@ -69,6 +70,7 @@ class App extends Component {
     return (
       <div>
         <FacebookProvider appId={FB_API_KEY}>
+          <img src={giphy} alt='Powered by Giphy(partly)' style={{float:'right'}}/>
           <Title>GIFusion</Title>
           <Title level={4}>Search GIF from various GIF database</Title>
           <SearchZone search={this.launchSearch} />

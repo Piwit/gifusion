@@ -56,7 +56,8 @@ class GiphySearchAPI(SearchAPI):
 
     def process_results(self, result):
         self.stop = result['pagination']['total_count'] == \
-            result['pagination']['offset'] + result['pagination']['count']
+            result['pagination']['offset'] + result['pagination']['count'] \
+            if 'pagination' in result else False
         processed_result = []
         for entry in result['data']:
             width, height = get_dimensions(
