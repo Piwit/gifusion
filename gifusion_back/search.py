@@ -24,14 +24,17 @@ def get_dimensions(width, height):
 class SearchAPI:
     url = ''
     params = {}
+    previous_term = ''
     stop = False
 
     def search(self, term, page, lang):
+        self.stop = self.stop if self.previous_term == term else False
         self.params = self.prepare_query(term, page, lang)
         if not self.stop:
             r = requests.get(self.url, params=self.params)
             result = self.process_results(r.json())
             return result
+        self.previous_term = term
         return []
 
     def prepare_query(self, term, page, lang):
