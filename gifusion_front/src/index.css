@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 code {
@@ -30,6 +30,11 @@ code {
 .share-button {
   display: block;
   float: right;
+}
+
+.gif-info {
+  max-width: 200px;
+  margin: auto;
 }
 
 .text-center {
@@ -56,22 +61,9 @@ code {
 
 .gif-appear {
   opacity: 0.01;
-  color:white;
 }
 
 .gif-appear.gif-appear-active {
   opacity: 1;
   transition: opacity 500ms ease-in;
-  color:pink;
-}
-
-.copy-appear {
-  opacity: 1;
-  color:white;
-}
-
-.copy-appear.copy-appear-active {
-  opacity: 0.01;
-  transition: opacity 5000ms ease-out;
-  color:pink;
 }

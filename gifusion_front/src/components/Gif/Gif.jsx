@@ -35,7 +35,7 @@ class Gif extends PureComponent {
                 />
           </CSSTransitionGroup>
         </a>
-        <div>
+        <div className='gif-info'>
           <span>{this.props.source}</span>
           <div className='share-button'>
             <Button title='Copy link' style={{backgroundColor: '#303030', color:'#ffffff'}} onClick={this.copy}><i className='fas fa-paperclip'></i></Button>

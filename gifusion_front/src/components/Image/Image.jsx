@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 
-import { Spin, Row } from 'antd';
+import { Row } from 'antd';
+import { getRndInteger } from '../../util.js';
+
+const COLORS = ['#512DA8', '#D1C4E9', '#673AB7', '#757575', '#212121', '#9E9E9E', '#BDBDBD', '#9C27B0'];
 
 class ImageToLoad extends PureComponent {
   state = {
@@ -23,7 +26,9 @@ class ImageToLoad extends PureComponent {
         />
         {!this.state.isLoaded &&
           <Row className='text-center'>
-            <Spin delay={500}/>
+            <div
+              style={{height: this.props.height, width:this.props.width, backgroundColor:COLORS[getRndInteger(0, 8)]}}>
+            </div>
           </Row>
         }
       </div>
